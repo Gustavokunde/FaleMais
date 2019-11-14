@@ -35,6 +35,8 @@ colocar um novo produto no mercado chamado FaleMais.
 
 #Como rodar
 
-Para rodar o backend da aplicação, primeiro rode yarn  abra a pasta Backend pelo terminal e rode "yarn dev"
+Para rodar o backend da aplicação, primeiro abra a pasta Backend pelo terminal e rode "yarn" para baixar as
+dependências do node_modules, depois rode "yarn dev"
 
-Para rodar o frontend, abra a pasta Frontend pelo terminal e rode "yarn start"
+Para rodar o frontend, abra a pasta Frontend pelo terminal e rode "yarn" para baixar as
+dependências do node_modules, depois rode rode "yarn start"
