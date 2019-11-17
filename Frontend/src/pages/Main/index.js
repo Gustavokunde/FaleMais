@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import api from '../../services/api';
 import logo from '../../assets/falemais.png';
+
+import { formatPrice } from '../../util/format';
+
 import {
   Container,
   SubmitButton,
@@ -19,8 +22,8 @@ export default class Main extends Component {
     destination: '',
     time: '',
     service: '',
-    pricewFaleMais: '0.00',
-    pricewoFaleMais: '0.00',
+    pricewFaleMais: '',
+    pricewoFaleMais: '',
   };
 
   handleSubmit = async e => {
@@ -84,7 +87,7 @@ export default class Main extends Component {
                   })}
                 </select>
 
-                <label>service: </label>
+                <label>Plano: </label>
                 <select
                   onChange={e => {
                     this.setState({ service: e.target.value });
@@ -95,7 +98,7 @@ export default class Main extends Component {
                   })}
                 </select>
 
-                <label>time: </label>
+                <label>Tempo: </label>
                 <input
                   type="text"
                   placeholder=" Quantos minutos?"
@@ -115,9 +118,9 @@ export default class Main extends Component {
               <strong>FALE</strong>
               MAIS
             </span>
-            : {`${'R$ ' + this.state.pricewFaleMais}`}
+            : {formatPrice(this.state.pricewFaleMais)}
           </h2>
-          <h2>Outros: {`${'R$ ' + this.state.pricewoFaleMais}`}</h2>
+          <h2>Outros: {formatPrice(this.state.pricewoFaleMais)}</h2>
         </Results>
       </>
     );
