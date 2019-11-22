@@ -4,11 +4,9 @@ import Picker from 'react-native';
 import MyFont from './amsipro-ultra.otf';
 
 export const Container = styled.View`
-  margin: 0;
-  padding: 0;
   flex: 1;
   flex-direction: column;
-  padding: 20px;
+  padding: 10px;
   background: #ffa615;
 
   @font-face {
@@ -20,8 +18,7 @@ export const Container = styled.View`
 export const Imagem = styled.Image`
   flex: 1;
   width: 100%;
-  margin: 0;
-  padding: 0;
+  padding: 10px;
 `;
 
 export const FirstContent = styled.View`
