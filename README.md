@@ -1,8 +1,9 @@
 # Teste FaleMais
 
-Foi desenvolvido o Backend com Node.js e o Frontend com React.
+Este projeto foi desenvolvido para um processo seletivo realizado em 2019.
+O Backend foi desenvolvido com Node.js e o Frontend com ReactJS.
 
-O funcionamento segue o seguinte pprincípio:
+O funcionamento segue o seguinte princípio:
 
 Desafio
 A empresa de telefonia Telzir, especializada em chamadas de longa distância nacional, vai
